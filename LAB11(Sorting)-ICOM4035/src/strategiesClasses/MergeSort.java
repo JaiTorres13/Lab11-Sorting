@@ -2,6 +2,7 @@ package strategiesClasses;
 
 import java.util.AbstractMap;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Hashtable;
 import java.util.Map;
@@ -39,7 +40,12 @@ public class MergeSort<E> extends AbstractSortingStrategy<E> {
 	 */
 	private void ms(int first, int last) {
 		// ADD CODE HERE 1
-		merge(first, (last - first)/ 2, last);
+		if ( first < last) {
+			int mid = (first + last)/2;
+			ms(first, mid);
+			ms(mid + 1, last);
+			merge(first, mid, last);
+		}	
 	}
 
 	/**

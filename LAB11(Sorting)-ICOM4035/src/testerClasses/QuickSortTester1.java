@@ -17,7 +17,7 @@ public class QuickSortTester1 {
 		
 		TestingUtils.displayListElements("Original Data", data);
 		
-		QuickSort<Integer> sorter = new QuickSort<>(new IntegerComparator1()); 
+		QuickSort<Integer> sorter = new QuickSort<>(new IntegerComparator2()); 
 		 
 		sorter.sortList(data);
 		

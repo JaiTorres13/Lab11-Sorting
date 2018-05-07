@@ -13,7 +13,7 @@ public class MergeSortTester1 {
 		
 		TestingUtils.displayListElements("Original Data", data);
 		
-		MergeSort<Integer> sorter = new MergeSort<>(new IntegerComparator1()); 
+		MergeSort<Integer> sorter = new MergeSort<>(new IntegerComparator2()); 
 		 
 
 		sorter.sortList(data);
